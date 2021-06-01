@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body{
+	background-image: url(../img/back.jpg);
+	background-size: 103% 103%;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+
+.mail-colector{
+	border: none !important;
+	border-bottom: 2px solid gray !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+}
+
+.mail-colector:focus  {
+	border-bottom: 2px solid  #1266F1 !important;
+	transition: 500ms;
+}
+
+.tamaño-container{
+	 width:440px !important;
+	 height: 338px !important;
+}
+
+footer{
+	background-color: rgba(0,0,0, 0.6); 
+}
