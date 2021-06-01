@@ -9,6 +9,7 @@
 -PHP 8.0
 -MySql
 -XAMPP u otro servidor (este viene con el MySql por defecto)
+-Simplemente se importa la base de datos "microtable.sql" en phpMyAdmin de Xampp o en el administrador de bases de datos a disposición.
 ```
 
 ## Captura de pantalla (pronto) 😉
