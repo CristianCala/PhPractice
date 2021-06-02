@@ -17,38 +17,43 @@ $filaSelect=mysqli_fetch_array($querySelect);
         <!-- Bootstrap 4 -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <!-- MDB 5 -->
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
-          rel="stylesheet"
-        />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
     </head>
     <body>
         <div class="bg-sucess row align-items-center justify-content-center vh-100 mt-4">
+            <form class="card container tamaño-container-update px-0" action="update.php" method="POST">
+                <div class="bg-dark container-header pt-2">
+                    <h1 class="text-center font-weight-bold text-info mt-2 h2">ACTUALIZAR USUARIO</h1>
+                    <h2 class="text-center h5 text-white fw-normal">Cambie y actualize el usuario</h2>
+                </div>
+                <div class="px-5 mt-4">
+                    <input type="hidden"  class="form-control" name="id" value="<?php echo $filaSelect['ID']  ?>" >
 
-            <form class="card container p-5 tamaño-container-update" action="update.php" method="POST">
-                <h1 class="text-center font-weight-bold">Actualizar Usuario</h1>
+                    <div class="wrapper mb-5 mt-4">
+                        <div class="input-data">
+                            <input  type="text" name="email" value="<?php echo $filaSelect['email']  ?>" required>
+                            <div class="underline"></div>
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="wrapper mb-5">
+                        <div class="input-data">
+                            <input type="text" name="password" value="<?php echo $filaSelect['password']  ?>" required>
+                            <div class="underline"></div>
+                            <label for="contraseña">Contraseña</label>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="input-data">
+                            <input type="text" name="fecha_reg" value="<?php echo $filaSelect['fecha_reg']  ?>" required>
+                            <div class="underline"></div>
+                            <label for="contraseña">Fecha</label>
+                        </div>
+                    </div>
 
-                <input type="hidden"  class="form-control" name="id" value="<?php echo $filaSelect['ID']  ?>" >
+                    <input type="submit" class="btn btn-primary btn-block font-weight-bold mt-4" value="Actualizar!">
+                </div>
 
-                <label for="email">Email</label>
-                <input type="text" class="form-control mb-3" name="email" placeholder="Email" value="<?php echo $filaSelect['email']  ?>" required>
-
-                <label for="contraseña">Contraseña</label>
-                <input type="text" class="form-control mb-3" name="password" placeholder="Contraseña" value="<?php echo $filaSelect['password']  ?>" required>
-
-                <label for="fecha">Fecha</label>
-                <input type="text" class="form-control mb-3" name="fecha_reg" placeholder="Fecha" value="<?php echo $filaSelect['fecha_reg']  ?>" required>
-
-                <input type="submit" class="btn btn-primary btn-block font-weight-bold mt-4" value="Actualizar!">
-
-                <!-- Para una mejora futura del input -->
-<!--               <div class="wrapper">
-                 <div class="input-data">
-                    <input type="text" required>
-                    <div class="underline"></div>
-                    <label>Name</label>
-                 </div>
-              </div> -->
             </form>
         </div>
         <!-- Js Bootstrap 4 -->

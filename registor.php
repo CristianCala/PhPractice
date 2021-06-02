@@ -56,7 +56,7 @@ $datos = mysqli_query ($conex3 ,$consulta);
 			<div class="pt-5 text-center">
 				<hgroup>
 					<h1 class="font-weight-bolder">USUARIOS LOGEADOS</h1>
-					<h2 class="font-weight-italic h4 pt-3 " style="color: #00A4EF;">SELECIONA EL USUARIO QUE DESEES EDITAR</h2>
+					<h2 class="font-weight-normal h4 pt-3 " style="color: #00A4EF;">SELECIONA EL USUARIO QUE DESEES EDITAR</h2>
 				</hgroup>
 			</div>
 			<div class="p-5 text-center mt-5">
@@ -84,10 +84,10 @@ $datos = mysqli_query ($conex3 ,$consulta);
 								<td>
 									<?php echo $fila["email"] ?>
 								</td>
-								<td class="passwrd">
+								<td class="passwrd hidden-text">
 									<?php echo $fila["password"] ?>
 								</td>
-								<?php echo "<td class= 'hidden-text td-display'> contraseña oculta</td>" ?>
+								<?php echo "<td class= 'td-display'> contraseña oculta</td>" ?>
 								<td>
 									<?php echo $fila["fecha_reg"] ?>
 								</td>

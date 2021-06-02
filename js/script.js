@@ -47,11 +47,11 @@ buttonShow.addEventListener('click', function() {
 	   clickCount++;
 	   if (clickCount === 1) {
 	   		clickCount = 1;
-	   		hidden();
+	   		show();
 
 	   } else if (clickCount === 2) {
 	   		clickCount = 0;
-	   		show();
+	   		hidden();
 	   }
 }, false);
 

